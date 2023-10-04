@@ -2,6 +2,10 @@ import streamlit as st
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
+
+import appdirs as ad
+ad.user_cache_dir = lambda *args: "/tmp"
+
 import yfinance as yf
 
 # Function to fetch stock data
